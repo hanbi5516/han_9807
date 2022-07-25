@@ -1,0 +1,11 @@
+#bn ul{display: flex; justify-content: space-evenly;margin: 0;}
+
+#bnbottom{display: flex; justify-content: space-around;}
+
+#Asec,#Bsec,#Csec,#Dsec,#Esec{margin-top: 50px;}
+
+h3{text-align: center; margin-bottom: 30px; font-size: 1em;}
+p{font-size: 0.8em;}
+
+.review > ul{display: flex; align-items: flex-end;}
+.review > ul > li{margin-right: 30px;}

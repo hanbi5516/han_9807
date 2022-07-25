@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 파비콘 -->
+    <link rel="icon" href="/hanbi/img/hanbi_t_favicon.png">
+    <!-- 오지이미지 -->
+    <meta property="og:url" content="http://bakhanbi98.dothome.co.kr/"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="부트스트랩의 최적화 랜딩페이지" />
+    <meta property="og:description" content="박한비의 자기소개" />
+    <meta property="og:image" content="/hanbi/img/og_img.png"/>
+    <title>함비는 아직 배우고싶어!</title>
+        <!-- 구글폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- 폰트어썸 -->
+        <script src="https://kit.fontawesome.com/ec2de34427.js" crossorigin="anonymous"></script>
+        <!-- 부트스트랩 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
+        <!-- 플러그인 = 스와이퍼 + aos -->
+        <link rel="stylesheet"href="//unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="//unpkg.com/aos@2.3.1/dist/aos.css">
+
+        <!-- 그누보드 기본 css -->
+        <link rel="stylesheet" href="/css/style.css?ver=<?php echo time(); ?>">
+        <!-- 커스터마이징 css -->
+        <link rel="stylesheet" href="/hanbi/css/style.css?ver=<?php echo time(); ?>">
+        <!-- AOS 플러그인 -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+        <!-- 제이쿼리 -->
+        <script src="/hanbi/js/jquery-2.2.4.min.js" ></script>
+        <script src="/hanbi/js/hanbi.js?ver=<?php echo time(); ?>"></script>        
+</head>
+<body>
+
+    <div class="wrap">
+
+        <header id="hd" class="border-0 fixed-top">
+            <div class="container-md d-flex align-items-center justify-content-md-between flex-column flex-md-row justify-content-center">
+            <!-- md사이즈 이상일때 컨테이너와 d-flex 처리
+            justify-content-between/align-items-center는 flex와 연관된 부가적인 명령이기때문에 flex가 사라지면 얘네도 자동으로 안먹히게됨 -->
+                <h1 class="mb-0">
+                    <a href=""><img src="/hanbi/img/t_logo.svg" alt="로고"></a>
+                </h1>
+                <!-- <button id="allMenu" class="d-md-none border-0 bg-transparent">
+                    <i class="fa-solid fa-bars">
+                        <span class="sr-only">전체메뉴 열기</span>
+                    </i>
+                    <i class="fa-solid fa-xmark">
+                        <span class="sr-only">전체메뉴 닫기</span>
+                    </i>
+                </button> -->
+                <ul id="gnb" class="d-flex pl-0 mb-0">
+                    <li><a href='#portfolio'>포트폴리오</a></li>
+                    <!-- md 이상일때 오른쪽패딩pr0 왼쪽패딩pl3 -->
+                    <li class="pl-md-3 pr-md-3"><a href='#me'>나의능력</a></li>
+                    <li class="pl-md-3 pr-md-3"><a href='#preinterview'>사전인터뷰</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="main" >
+            <div id="portfolio">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <!-- 플러그인 클래스명은 임의대로 수정하면 안되고 임의로 내 클래스명을 넣어서 커스터마이징해줘야 함 -->
+                      <div class="swiper-slide sir">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <!-- <h2>
+                                1. 배경으로 그누보드 포폴 반응형 배너이미지 하나 만들기 1080*1080으로 만들기
+                                <strong>퍼블리셔</strong>
+                            </h2>
+                            <h2>
+                                2. 데스크탑 용도 1920*700 / 모바일 전용 1080*1080
+                                <strong>디자인</strong>
+                            </h2>
+                            <h4>
+                                두개중에 하나로 하면 됨 디자인욕심이 있으면 2번 퍼블리셔 실력보여줄때 1번
+                                시맨틱구조를 활용하였다. p태그(블럭요소)는 들어올 수 없다. 첫번째는 메인배너
+                                캡쳐떠서 넣기 금지 없어보임
+                            </h4> -->
+                            <!-- <div>
+                                <a href="#피그마주소">피그마</a>
+                                <a href="#그누보드주소">사이트 미리보기</a>
+                                <a href="#깃허브주소">깃허브</a>
+                            </div> -->
+                        </div>
+                      </div>
+                      <div class="swiper-slide hard">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h2>
+                                하드코딩을 잘하는
+                                <strong>퍼블리셔</strong>
+                            </h2>
+                            <h4>
+                                관심있는 분야를 살려서 배너 만들어서 삽입
+                            </h4>
+                        </div>
+                      </div>
+                      <div class="swiper-slide ecom">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h2>
+                                e커머스가 가능한
+                                <strong>기획전</strong>
+                            </h2>
+                            <h4>
+                                각각 포폴이 나와야함 대형쇼핑몰에선 각각 기획자가 따로 있음
+                            </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- pagination = 인디케이트버튼임 -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <!-- 유저가 이미 알아서 움직이기 때문에 모바일에선 사용자를 위해 컨트롤러를 없앤다 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                  </div>
+            </div>
+            <div id="me">
+                <div class="d-lg-flex">
+                    <div class="col-lg-6 meimg">
+                        <div data-aos="zoom-out"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                        >
+                            <h2>내사진과 내소개타이틀과 간력한 이력</h2>
+                            <img class="img-fluid" src="/hanbi/img/favicon.png" alt="안녕나에용">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 skill">
+                        <dl class="d-md-flex flex-wrap">
+                            <dt class="col-md-4">photoshop</dt>
+                            <dd class="col-md-8">
+                                <div>
+                                    <p>95%</p>
+                                </div>
+                            </dd>
+                            <dt class="col-md-4">illustrator</dt>
+                            <dd class="col-md-8">
+                                <div>
+                                    <p>95%</p>
+                                </div>
+                            </dd>
+                            <dt class="col-md-4">figma</dt>
+                            <dd class="col-md-8">
+                                <div>
+                                    <p>60%</p>
+                                </div>
+                            </dd>
+                            <dt class="col-md-4">vscode</dt>
+                            <dd class="col-md-8">
+                                <div>
+                                    <p>95%</p>
+                                </div>
+                            </dd>
+                        </dl>                       
+                    </div>
+                </div>
+            </div>
+            <div id="preinterview">
+                <h3>사전인터뷰</h3>
+                <dl>
+                    <dt>질문1</dt>
+                    <dd>답변1</dd>
+                    <dt>질문2</dt>
+                    <dd>답변2</dd>
+                    <dt>질문3</dt>
+                    <dd>답변3</dd>
+                </dl>
+            </div>
+
+        </section>
+
+        <footer id="ft" >
+            나의 대외적인 정보 (전화번호/이메일/카카오톡 등)
+            <a href="tel:01076135516">바로전화걸기</a>
+        </footer>
+
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>

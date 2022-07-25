@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poor+Story:400');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+
+body{ font-family:'S-CoreDream-4Regular','Noto Sans KR', sans-serif; font-weight: 400;}
+
+/* body{ overflow-x: hidden;} 급하게 반응형을 만들때 막아버림 끝나고 마지막에 넣는거임 */
+li{ list-style: none;}
+#gnb a{ color:#007724; text-decoration: none;  white-space: nowrap;}
+
+
+
+.open > .fa-xmark { display:block }
+.open > .fa-bars { display:none }
+
+.fa-xmark { display:none }
+.fa-bars { display:block }
+
+.open + #gnb{ 
+    display:flex !important; 
+    position: fixed; background-color: #ccc;
+    left:0; right:0; top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    line-height: 2;
+}
+
+.open + #gnb:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:30px;
+    height:30px;
+    background-color: #ccc;
+    left:0; right:0;
+    margin:0 auto;
+    transform: rotate(-45deg);
+    top:-15px;
+}
+
+#main > div{ height: 100vh; }
+
+#gnb a.act{ color:#00c291}
+
+#hd h1 a img{
+    height:8rem
+}
+
+#portfolio .swiper-slide{
+    max-height: 700px; /* 데스크탑 전용 기준 700픽셀이상 커지지 마! */
+    height: 100vw; /* 이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위 */
+}
+#portfolio .sir{
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondevent_test.png);
+}
+#portfolio .hard{ background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondevent_test.png);}
+
+#hd > div:after{
+    content: "";
+    display: block;
+}
+
+#me h2{
+    background-color: #fff;
+    transition-delay: 1s;
+    transition-duration: 0.6s; /* 듀레이션이 있어야 딜레이가 먹힘 */
+    color: #888;
+
+}
+.aos-animate h2{
+    background-color: pink !important;
+    color: #fff !important;
+}
+
+
