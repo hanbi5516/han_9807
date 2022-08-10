@@ -38,11 +38,11 @@ $(document).ready(function(){
 
     const swiper = new Swiper('#portfolio .swiper', {
         // Optional parameters 클래스명이 스와이퍼로 되있으면 슬라이드가 같이 돌아감
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        // loop: true,
     
         // If we need pagination
         pagination: {

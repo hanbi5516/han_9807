@@ -1,11 +1,229 @@
-#bn ul{display: flex; justify-content: space-evenly;margin: 0;}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-#bnbottom{display: flex; justify-content: space-around;}
 
-#Asec,#Bsec,#Csec,#Dsec,#Esec{margin-top: 50px;}
 
-h3{text-align: center; margin-bottom: 30px; font-size: 1em;}
-p{font-size: 0.8em;}
+ 
+
+
+
+/* 공통부분 */
+
+a,h2{font-family: 'GmarketSansMedium';}
+h3{font-family: 'GmarketSansBold';text-align: center; margin: 3em;}
+h4,h5,h6{font-family: 'GmarketSansLight'; font-weight: 700; text-align: center;}
+p{font-size: 0.8em; font-family: 'GmarketSansLight';font-weight: 700;}
+label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
 
 .review > ul{display: flex; align-items: flex-end;}
 .review > ul > li{margin-right: 30px;}
+
+
+/* nav */
+
+#hd{ padding: 0.5rem 0; }
+.gnb_1da {  
+   
+    font-size: 1.2rem;
+    font-family: 'GmarketSansMedium';
+   
+  }
+  #gnb_all{ left:0}
+  #gnb_all h2{ display: none;}
+
+
+/* 상단배너 슬라이드 */
+#bn .swiper-wrapper .bn1{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstbanner_test.jpg);
+}
+#bn .swiper-wrapper .bn2{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondbanner1_test.jpg);
+}
+#bn .swiper-wrapper .bn3{ 
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/lastbanner_test.jpg);
+}
+
+#Bsec .swiper-wrapper .ev1{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstevent_test.jpg);
+}
+#Bsec .swiper-wrapper .ev2{
+    background-size: 100% auto;
+    background-position: center; 
+    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondevent_test.png);
+}
+
+#Bsec .swiper-slide{ height:0; padding-top: 42.8%; min-height:800px; background-repeat: no-repeat;}
+
+#Csec, #Dsec, #Esec{ height:60vh; min-height:600px; margin:3em; }
+
+#bn .swiper-bn1, #bn .swiper-bn2, #bn .swiper-bn3{background-size: 60vh; max-width: 100%;}
+
+/* 배너, 상단 */
+#bn .swiper-slide{
+    background-size:contain;
+    background-repeat: no-repeat;
+    max-height: 700px;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+    height: 40vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+}
+
+
+#container_wr{
+    width: auto !important;
+}
+
+#bnbottom{ width: 100%; height: 5vh; display: flex; justify-content: space-around;}
+
+#logo > a > img{
+    height: 4em;
+}
+.swiper-pagination-bullet{
+    width: 1em; height: 1em; border-radius: 10px; background-color: #b8e4ff; transition: 0.6s;}
+.swiper-pagination-bullet-active.swiper-pagination-bullet{ width:4em;}
+
+.swiper-button-next:after, .swiper-button-prev:after{color: #b8e4ff;}
+
+/* bnbottom */
+#bnbottom .product{
+    width: 100%;
+    height: 4.5em;
+    background-color: #06659F;
+}
+.product{
+    justify-content: space-evenly!important;
+}
+.productext input:focus{ outline: none; box-shadow: none; border:0 !important}
+.productext input[type='text']{ background-color: transparent; border:0; color:#cff0ff}
+.productext li{
+border-bottom:1px solid White
+}
+.product h5,
+.product h6{
+    color: #fff;
+    font-weight: 200;
+}
+.product h5{
+    font-size: 1em;
+}
+.product h6{
+    font-size: 0.8em;
+}
+.productext ul li a{
+    color: #06456b;
+}
+.productext ul li a:hover{
+    color: #007bff;
+}
+.search{width: 1.5em; height: 1.5em;}
+
+
+
+/* Asec */
+
+#Asec .effect .youtubeBox > div{ position: relative; height: 0; padding-top: 56%; }
+#Asec .effect .youtubeBox iframe{ position: absolute; left:0; top:0; width:100%; height:100%;}
+
+.britaeffect h4{margin-top: 4.5em;}
+
+/* Bsec */
+
+
+
+/* Csec */
+
+
+/* review */
+.re > a > img{
+    height: 20em;
+    width: 21.2em;
+}
+.re_img img{
+    height: 1.5em;
+    width: 1.5em;
+}
+.re .re_img p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+}
+.re .re_img{ padding: 0.4rem 0;}
+.rt .re{ padding: 0 1rem; overflow: hidden;}
+/* best아닌 start간격 */
+.rt .re_img > img{ margin-left: 0.4rem; }
+
+/* Dsec */
+#notice > div{width: 75em; height: 10em; background-color: #90E0DB; margin: 0 auto;}
+#notice form ul{margin: auto 0;}
+#notice form ul li{max-width: 50em; min-width: 20em; height: 3em; margin: 0 auto; border-bottom: solid 3px #DFF7F5;}
+
+#noticetext input[type='checkbox'] label{font-family: 'GmarketSansLight'; font-weight: 700;}
+#noticetext ul li label{font-size: 0.8em; color: #555;}
+
+
+.send{ border:1px solid #06456b; border-radius: 10px; padding: 0.5rem; background-color: #fff0;}
+.send[type='submit']:hover{background-color: #cff0ff;}
+
+form li strong{ text-align: center;}
+
+
+
+
+/* Esec */
+
+
+.mapimg{margin-right: 2em; width: 100%;}
+.mapimg img{max-width: 5rem; height: 5rem;}
+
+.area{margin-left: 2em;}    
+
+
+
+@media (max-width:1280px){
+    #Bsec .swiper-wrapper .swiper-slide{
+        min-height:none;
+        height:100vw;
+        padding-top:0;
+        background-size: auto 100%;
+    }
+    #bn  .swiper-wrapper .swiper-slide{
+        background-size:auto 100%;
+        
+        max-height: none;  /*데스크탑 전용 기준 700픽셀이상 커지지 마! */
+        height: 50vw;  /*이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위*/
+    }
+}
+@media (max-width:992px){
+    #Asec, #Bsec, #Csec, #Dsec, #Esec{ height: auto;}
+}
+
+@media(min-width:768px){
+    #banner .swiper{
+        height: 650px; padding-top: 0;
+    }
+}
+@media(max-width:768px){
+    #banner .ad{background-position: calc(50% - 10vw);}
+}

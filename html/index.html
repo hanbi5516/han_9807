@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 파비콘 -->
-    <link rel="icon" href="/hanbi/img/hanbi_t_favicon.png">
-    <!-- 오지이미지 -->
-    <meta property="og:url" content="http://bakhanbi98.dothome.co.kr/"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="부트스트랩의 최적화 랜딩페이지" />
-    <meta property="og:description" content="박한비의 자기소개" />
-    <meta property="og:image" content="/hanbi/img/og_img.png"/>
     <title>함비는 아직 배우고싶어!</title>
+        <!-- 파비콘 -->
+        <link rel="icon" href="/hanbi/img/hanbi_favicon.png">
+        <!-- 오지이미지 -->
+        <meta property="og:url" content="http://bakhanbi98.dothome.co.kr/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="부트스트랩을 활용한 웹프로젝트"/>
+        <meta property="og:description" content="박한비의 자기소개페이지"/>
+        <meta property="og:image" content="/hanbi/img/hanbi_og_img.png"/>
+        <!-- 바로가기 아이콘 이미지 -->
+        <link rel="shortcut icon" type="image/x-icon" href="/hanbi/img/hanbi_bgpink_logo.png" />
+        <link rel="apple-touch-icon" href="/hanbi/img/hanbi_bgpink_logo.png" />
+        <link rel="apple-touch-icon-precomposed" href="/hanbi/img/hanbi_bgpink_logo.png">
+        <meta name="msapplication-TileImage" content="/hanbi/img/hanbi_bgpink_logo.png" size="270x270">
         <!-- 구글폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,18 +41,19 @@
 
         <!-- 제이쿼리 -->
         <script src="/hanbi/js/jquery-2.2.4.min.js" ></script>
-        <script src="/hanbi/js/hanbi.js?ver=<?php echo time(); ?>"></script>        
+        <script src="/hanbi/js/hanbi.js?ver=<?php echo time(); ?>"></script>
+              
 </head>
 <body>
 
     <div class="wrap">
 
         <header id="hd" class="border-0 fixed-top">
-            <div class="container-md d-flex align-items-center justify-content-md-between flex-column flex-md-row justify-content-center">
-            <!-- md사이즈 이상일때 컨테이너와 d-flex 처리
-            justify-content-between/align-items-center는 flex와 연관된 부가적인 명령이기때문에 flex가 사라지면 얘네도 자동으로 안먹히게됨 -->
-                <h1 class="mb-0">
-                    <a href=""><img src="/hanbi/img/t_logo.svg" alt="로고"></a>
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+                <!-- md사이즈 이상일때 컨테이너와 d-flex 처리
+                justify-content-between/align-items-center는 flex와 연관된 부가적인 명령이기때문에 flex가 사라지면 얘네도 자동으로 안먹히게됨 -->
+                <h1 class="nav mb-0">
+                    <a href="#none"><img src="/hanbi/img/hanbi_logo.png" alt="로고"></a>
                 </h1>
                 <!-- <button id="allMenu" class="d-md-none border-0 bg-transparent">
                     <i class="fa-solid fa-bars">
@@ -57,138 +63,198 @@
                         <span class="sr-only">전체메뉴 닫기</span>
                     </i>
                 </button> -->
-                <ul id="gnb" class="d-flex pl-0 mb-0">
-                    <li><a href='#portfolio'>포트폴리오</a></li>
+                <ul id="gnb" class="d-lg-flex justify-content-around pl-0 mb-0">
+                    <li class="pl-md-3 pr-md-3"><a href='#portfolio'>portfolio</a></li>
                     <!-- md 이상일때 오른쪽패딩pr0 왼쪽패딩pl3 -->
-                    <li class="pl-md-3 pr-md-3"><a href='#me'>나의능력</a></li>
-                    <li class="pl-md-3 pr-md-3"><a href='#preinterview'>사전인터뷰</a></li>
+                    <li class="pl-md-3 pr-md-3"><a href='#me'>ability</a></li>
+                    <li class="pl-md-3 pr-md-3"><a href='#preinterview'>interview</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
 
         <section id="main" >
-            <div id="portfolio">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <!-- 플러그인 클래스명은 임의대로 수정하면 안되고 임의로 내 클래스명을 넣어서 커스터마이징해줘야 함 -->
-                      <div class="swiper-slide sir">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <!-- <h2>
-                                1. 배경으로 그누보드 포폴 반응형 배너이미지 하나 만들기 1080*1080으로 만들기
-                                <strong>퍼블리셔</strong>
-                            </h2>
-                            <h2>
-                                2. 데스크탑 용도 1920*700 / 모바일 전용 1080*1080
-                                <strong>디자인</strong>
-                            </h2>
-                            <h4>
-                                두개중에 하나로 하면 됨 디자인욕심이 있으면 2번 퍼블리셔 실력보여줄때 1번
-                                시맨틱구조를 활용하였다. p태그(블럭요소)는 들어올 수 없다. 첫번째는 메인배너
-                                캡쳐떠서 넣기 금지 없어보임
-                            </h4> -->
-                            <!-- <div>
-                                <a href="#피그마주소">피그마</a>
-                                <a href="#그누보드주소">사이트 미리보기</a>
-                                <a href="#깃허브주소">깃허브</a>
-                            </div> -->
-                        </div>
-                      </div>
-                      <div class="swiper-slide hard">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h2>
-                                하드코딩을 잘하는
-                                <strong>퍼블리셔</strong>
-                            </h2>
-                            <h4>
-                                관심있는 분야를 살려서 배너 만들어서 삽입
+                <div id="portfolio" class="bg1">
+                    <div class="swiper">
+                        <!-- Slides -->
+                        <!-- 플러그인 클래스명은 임의대로 수정하면 안되고 임의로 내 클래스명을 넣어서 커스터마이징해줘야 함 -->
+                        <div class="hard d-md-flex flex-column d-flex justify-content-center align-items-center">
+                            <h4 class="d-flex flex-column align-items-center">
+                                박한비<br>
+                                <h6>ui·ux Designer / Web Publisher</h6>
+                                <h6>부트스트랩을 활용하여 반응형을 최적화시켰습니다.</h6>
+                                <h6>aos 최적화를 통해 제이쿼리 구동을 편리하게 하였습니다.</h6>
                             </h4>
                         </div>
-                      </div>
-                      <div class="swiper-slide ecom">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <h2>
-                                e커머스가 가능한
-                                <strong>기획전</strong>
-                            </h2>
-                            <h4>
-                                각각 포폴이 나와야함 대형쇼핑몰에선 각각 기획자가 따로 있음
+                        <div class="hard d-md-flex flex-column d-flex justify-content-center align-items-center">
+                            <h4 class="d-flex flex-column align-items-center pb-md-3">
+                                출판, 디자인, 편집, 하드코딩에 강한<br>
+                                <strong>퍼블리셔</strong>
                             </h4>
                         </div>
-                      </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <!-- pagination = 인디케이트버튼임 -->
-                    <div class="swiper-pagination"></div>
-                  
-                    <!-- If we need navigation buttons -->
-                    <!-- 유저가 이미 알아서 움직이기 때문에 모바일에선 사용자를 위해 컨트롤러를 없앤다 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                  </div>
-            </div>
-            <div id="me">
-                <div class="d-lg-flex">
-                    <div class="col-lg-6 meimg">
-                        <div data-aos="zoom-out"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                        >
-                            <h2>내사진과 내소개타이틀과 간력한 이력</h2>
-                            <img class="img-fluid" src="/hanbi/img/favicon.png" alt="안녕나에용">
+                        <div class="ecom d-md-flex flex-column d-flex justify-content-center align-items-left">
+                            <h4 class="d-flex flex-column align-items-center pb-md-3">
+                                양방향 소통이 가능한<br>
+                                <strong>퍼블리셔</strong>
+                            </h4>
                         </div>
-                    </div>
-                    <div class="col-lg-6 skill">
-                        <dl class="d-md-flex flex-wrap">
-                            <dt class="col-md-4">photoshop</dt>
-                            <dd class="col-md-8">
-                                <div>
-                                    <p>95%</p>
-                                </div>
-                            </dd>
-                            <dt class="col-md-4">illustrator</dt>
-                            <dd class="col-md-8">
-                                <div>
-                                    <p>95%</p>
-                                </div>
-                            </dd>
-                            <dt class="col-md-4">figma</dt>
-                            <dd class="col-md-8">
-                                <div>
-                                    <p>60%</p>
-                                </div>
-                            </dd>
-                            <dt class="col-md-4">vscode</dt>
-                            <dd class="col-md-8">
-                                <div>
-                                    <p>95%</p>
-                                </div>
-                            </dd>
-                        </dl>                       
+                        <div class="pro d-md-flex flex-column d-flex justify-content-center align-items-left">
+                            <h4 class="d-flex flex-column align-items-center pb-md-3">
+                                트렌디한 감각을 가진<br>
+                                <strong>퍼블리셔</strong>
+                            </h4>
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <!-- pagination = 인디케이트버튼임 -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    
+                        <!-- If we need navigation buttons -->
+                        <!-- 유저가 이미 알아서 움직이기 때문에 모바일에선 사용자를 위해 컨트롤러를 없앤다 -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                    
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
                 </div>
-            </div>
-            <div id="preinterview">
-                <h3>사전인터뷰</h3>
-                <dl>
-                    <dt>질문1</dt>
-                    <dd>답변1</dd>
-                    <dt>질문2</dt>
-                    <dd>답변2</dd>
-                    <dt>질문3</dt>
-                    <dd>답변3</dd>
-                </dl>
-            </div>
+
+                <div id="me" class="bg2">
+                    <div class="d-lg-flex">
+                        <div class="d-md-flex flex-column col-lg-6 lgimg m-auto">
+
+                            <h2 class="d-lg-flex justify-content-center align-items-start">사람들이 좋아하는것을 잘 파악하는 엔프피입니다.</h2>
+                            <img class="img-fluid" src="/hanbi/img/hanbi_og_img.png" alt="착한얼굴에 그렇지 못한 앙마">
+
+                        </div>
+                        <div class="col-lg-6 skill">
+                            <ul class="d-lg-flex flex-start align-items-center">
+                                <li class="pr-lg-4">
+                                    <div class="heart">
+                                        <p class="ht">illustrator</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                  </div>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-flex flex-start align-items-center">
+                                <li class="pr-lg-4">
+                                    <div class="heart">
+                                        <p class="ht">photoshop</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-flex flex-start align-items-center">
+                                <li class="pr-lg-4">
+                                    <div class="heart">
+                                        <p class="ht">vscode</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                      </div>
+                                </li>
+                            </ul>
+                            <ul class="d-lg-flex flex-start align-items-center">
+                                <li class="pr-lg-4">
+                                    <div class="heart">
+                                        <p class="ht">figma</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 98%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">98%</div>
+                                      </div>
+                                </li>
+                            </ul>
+                            <!-- <dl class="d-flex flex-column justify-content-center align-items-baseline">
+                                <div class="heart"></div>
+                                <dt class="col-md-4">photoshop</dt>
+                                <dd class="col-md-2">
+                                    <div>
+                                        <p>95%</p>
+                                    </div>
+                                    <div></div>
+                                </dd>
+                                <div class="heart"></div>
+                                <dt class="col-md-4">figma</dt>
+                                <dd class="col-md-2">
+                                    <div>
+                                        <p>95%</p>
+                                    </div>
+                                    <div></div>
+                                </dd>
+                                <div class="heart"></div>
+                                <dt class="col-md-4">vscode</dt>
+                                <dd class="col-md-2">
+                                    <div>
+                                        <p>95%</p>
+                                    </div>
+                                    <div></div>
+                                </dd>
+                                <div class="heart"></div>
+                                <dt class="col-md-4">illustrator</dt>
+                                <dd class="col-md-2">
+                                    <div>
+                                        <p>95%</p>
+                                    </div>
+                                    <div></div>
+                                </dd>
+                            </dl>                        -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="preinterview" class="bg3 d-flex justify-content-around align-items-center">
+                    <div class="bg">
+                        <h3 class="bgt pb-5">사전인터뷰</h3>
+                        <dl>
+                            <dt>어떤 회사를 찾으시나요?</dt>
+                            <dd>
+                                1. 야근을 한달에 2번이상 하지 않는 회사
+                                2. 점심식대를 주는 회사
+                                3. 온화하고 인간적인 회사
+                                4. 간식주는 회사
+                                5. 욕하는 상사 없는 회사
+                            </dd><br>
+                            <dt>당신은 어떤 사람인가요?</dt>
+                            <dd>
+                                1. 지각하지 않는 사원
+                                2. 상사의 말을 순종적으로 듣는 직원
+                                3. 입이 무거운 사원
+                                3. 입맛이 까다로운 사원
+                                4. 인사성이 밝은 사원
+                                5. 다꾸를 좋아하는 사원
+                            </dd>
+                            <!-- <dt>점심식대 없는 회사</dt>
+                            <dd>시러요~~~~~~!</dd><br>
+                            <dt>냉랭한 분위기의 회사</dt>
+                            <dd>시러요~~~~~~!</dd><br>
+                            <dt>간식주는 회사</dt>
+                            <dd>조하요~~~~~~!</dd><br>
+                            <dt>욕 안하는 상사</dt>
+                            <dd>조하요~~~~~~!</dd><br> -->
+                        </dl>
+                    </div>
+                </div>
 
         </section>
 
-        <footer id="ft" >
-            나의 대외적인 정보 (전화번호/이메일/카카오톡 등)
-            <a href="tel:01076135516">바로전화걸기</a>
+        <footer id="ft" class="d-flex justify-content-center">
+            <div class="ft">
+                010-7613-5516 / 박한비입니다. / bakhanbi98@naver.com /
+                <a href="tel:01076135516">바로전화걸기</a>
+                <a href="">Instagram</a>
+                <div id="ft_copy">Copyright &copy; <b>bakhanbi</b> All rights reserved.</div>
+            </div>
         </footer>
 
     </div>

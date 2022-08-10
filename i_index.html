@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gugudan">
+        <input type="text" value="값" name="" id=""><button>단수를 입력하세요</button>
+        <!-- 밸류라는 옵션으로 빈칸에 이미 들어가있음 -->
+        <div>
+            구구단을 ul과 li태그로 노출하기
+        </div>
+    </div>
+    <script>
+        // 내장스크립트는 onload (자바스크립트)나 ready (제이쿼리) 이벤트 필요없음
+        // html 태그를 모두 로딩한 후에 실행하겠다 라는 뜻
+        // 자체가 태그임, 레디나 온로드안에 넣어야 구동이 됨
+        // alert('창이 열리나 확인하는 방법')
+        // $('#gugudan').html('<h3>3단</h3>');
+        $('#gugudan').on('click','button',function(){
+
+            var dnasu = $('##gugudan input').val();
+
+            if(dnasu == ''){
+                alert('입력칸을 채워주세요.');
+                $('#gugudan input').focus();
+            }
+            // 칸이 비어있는것과 아닌것을 구분하기 위해 if와 else가 생겨났다
+            // .val()는 value="값"가 비어있는지 아닌지를 보고 값이 있으면 가져옴
+            // return false;
+            // 없으면 계속 돌아가서 디버그가 터짐 밸류값을 못받았으니까 자바스크립트를 멈춤
+            
+            // else{
+            //     alert($('#gugudan input').val());
+            //     // input의 기입한 값을 가져와라
+            // }
+            var dna ='';
+            dan += '<h3>'+dnasu+'단</h3>'; // 변수와 상수를 한번에 표시
+            dan += '<ul>';
+                for(var i = 2; i < 10; i++ ){
+                    dan += '<li>'+dnasu+'X'+2+'='+(dansu*2)+'</li>';
+                }
+            
+            dan += '</ul>';
+            
+            $('#gugudan > div').html(dan)
+
+            // 1.input, select, textarea 은 val() 메서드를사용해서 값을 호출
+            // input중에서 type이 submit,image > form의 데이터 val로 받을 필요없는 존재
+            // 네임이 없어서 정보로 전송이 안됨
+        })
+    </script>  
+</body>
+</html>
