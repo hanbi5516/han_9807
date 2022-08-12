@@ -30,8 +30,8 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 
-    <div id="bnbottom" >
-        <div class="product d-flex justify-content-evenly align-items-center py-3 py-md-0 text-md-start">
+    <div id="bnbottom" class="mb-5">
+        <div class="product mb-5 d-flex justify-content-evenly align-items-center py-3 py-md-0 text-md-start">
             <div class="producthead d-flex flex-column">
                 <h5>제품등록</h5>
                 <h6>* 정품등록시 500포인트를 적립해드려요!</h6>
@@ -54,11 +54,11 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
 
 
-    <section id="Asec" class="container">
+    <section id="Asec" class="container py-3">
         <h3>브리타 효과</h3> 
         
-        <div class="effect  d-lg-flex  justify-content-between">
-            <div class="youtubeBox col-lg-6">
+        <div class="effect d-lg-flex justify-content-lg-between align-items-lg-center">
+            <div class="youtubeBox col-lg-6 mb-5">
                 <div>
                     <iframe
                     width="100%"  src="https://www.youtube.com/embed/_GFqZ4jwgRA?start=3?autoplay=1&mute=1"
@@ -67,9 +67,9 @@ include_once(G5_THEME_PATH.'/head.php');
                     </iframe>
                 </div>
            </div>
-            <div class="britaeffect text-center col-lg-5 mt-4 mt-lg-0">
+            <div class="britaeffect text-center col-lg-5 my-4 mt-lg-0">
                 <h4>안전, 위생, 편리, 가격까지</h4>
-                <p>막스트라 플러스 필터로 보이지 않는 불순물을 걸러<br>
+                <p class="mb-0">막스트라 플러스 필터로 보이지 않는 불순물을 걸러<br>
                     물 맛까지 살리는 브리타. 이젠 집에서 손 쉽게<br>
                     깨끗하고 맛있는 물을 마셔보세요!</p>
             </div>
@@ -77,7 +77,7 @@ include_once(G5_THEME_PATH.'/head.php');
         
         
     </section>
-    <section id="Bsec" class="mx-0">
+    <section id="Bsec" class="mx-0 py-3">
         <div class="event">
             <h3>이벤트</h3>
             <div class="swiper event-mySwiper">
@@ -93,9 +93,9 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Csec" class="">
+    <section id="Csec">
         <h3>고객찐리뷰</h3>
-        <div class="rt row justify-content-center">
+        <div class="rt row justify-content-center pt-5">
             <div class="re col-lg col-md-8 mx-md-auto text-center text-lg-left mb-5 mb-lg-0">
                 <a href=""><img src="/ncs/img/britaproject_img/review1.jpg" alt=""></a>
                 <div class="re_img d-flex justify-content-between align-items-center">
@@ -146,7 +146,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     <img src="/ncs/img/britaproject_img/star.svg" alt="">
                     <img src="/ncs/img/britaproject_img/star.svg" alt="">
                 </div>
-                <p class="mb-0 pt-3">사무실에 놓을겸 대용향으로 구매해서 사용중입니다 직원들도 만족하고 있고 생각보다 필터를 자주갈지 않아도 되고 유튜브에 나와있는대로 따라하는데
+                <p class="mb-0 pt-3">사무실에 놓을겸 대용량으로 구매해서 사용중입니다 직원들도 만족하고 있고 생각보다 필터를 자주갈지 않아도 되고 유튜브에 나와있는대로 따라하는데
                 </p>
             </div>
             <div class="re col-lg col-md-6">
@@ -163,18 +163,18 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Dsec">
+    <section id="Dsec" class="my-3">
         <div id="box">
             <div id="notice">
-                <div class="d-flex flex-column justify-content-evenly align-items-center my-3">
+                <div class="noticetext d-flex flex-column justify-content-evenly align-items-center my-3">
                     <h3 class="mt-5 mb-3">브리타 뉴스레터 구독</h3>
                     <h5>특별 프로모션과 최신뉴스를 한번에 받아보세요 !</h5>
                 </div>
-                <form action="">
+                <form action="" class="d-flex flex-column justify-content-evenly align-items-center">
                     <ul class="my-5">
-                        <li class="d-flex justify-content-around mt-4">
+                        <li class="noticename">
                             <strong>성별</strong>
-                            <div>
+                            <div class="check">
                                 <input type="checkbox" id="man">
                                 <label for="man" class="mx-2">남성</label>
                                 <input type="checkbox" id="famle">
@@ -183,9 +183,9 @@ include_once(G5_THEME_PATH.'/head.php');
                                 <label for="no" class="mx-2">표시하고싶지 않음</label>
                             </div>
                         </li>
-                        <li class="d-flex justify-content-around mt-4">
+                        <li class="noticename">
                             <strong>연령</strong>
-                            <div>
+                            <div class="check">
                                 <input type="checkbox" id="age1">
                                 <label for="age1" class="mx-2">20대</label>
                                 <input type="checkbox" id="age2">
@@ -196,13 +196,13 @@ include_once(G5_THEME_PATH.'/head.php');
                                 <label for="age4" class="mx-2">50대</label>
                             </div>
                         </li>
-                        <li class="d-flex justify-content-around mt-4">
+                        <li class="noticename">
                             <strong>이름</strong>
-                            <div><input type="text"></div>
+                            <div class="check"><input type="text"></div>
                         </li>
-                        <li class="d-flex justify-content-around mt-4">
+                        <li class="noticename">
                             <strong>이메일</strong>
-                            <div><input type="text"></div>
+                            <div class="check"><input type="text"></div>
                         </li>
                     </ul>
                 </form>
@@ -226,9 +226,9 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Esec">
+    <section id="Esec" class="py-3">
         <h3>판매처찾기</h3>
-        <ul class="d-md-flex justify-content-center mb-0">
+        <!-- <ul class="d-md-flex justify-content-center mb-0">
             <li class="mr-md-5 pr-1">
                 <input type="text" placeholder='검색으로 찾기'>
                 <i class=""></i>
@@ -250,8 +250,26 @@ include_once(G5_THEME_PATH.'/head.php');
                     <li class=""><a href="">송파점</a></li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </div> -->
+
+    <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1660291691228" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+         <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1660291691228",
+                "key" : "2bd38",
+                "mapWidth" : "640",
+                "mapHeight" : "360"
+            }).render();
+        </script>
 
 
 
