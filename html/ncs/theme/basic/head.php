@@ -59,7 +59,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <h2>메인메뉴</h2>
             <div class="gnb_wrap">
                 <ul id="gnb_1dul">
-                    
+                <li class="gnb_1dli gnb_mnal d-md-none"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li>
                     <?php
                     $menu_datas = get_menu_db(0, true);
                     $gnb_zindex = 999; // gnb_1dli z-index 값 설정용
@@ -68,7 +68,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         if( empty($row) ) continue;
                         $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
                     ?>
-                    <li class="gnb_1dli <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                    <li class="gnb_1dli <?php echo $add_class; ?> d-none d-md-block" style="z-index:<?php echo $gnb_zindex--; ?>">
                         <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
                         <?php
                         $k = 0;

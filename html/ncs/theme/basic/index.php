@@ -81,11 +81,10 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="event">
             <h3>이벤트</h3>
             <div class="swiper event-mySwiper">
-                <div class="swiper-wrapper  event-swiper">
-                    <div class="swiper-slide ev1"></div>
-                    <div class="swiper-slide ev2"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/ncs/img/britaproject_img/firstevent_test.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/ncs/img/britaproject_img/secondevent_test.png" alt=""></div>
                 </div>
-
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -228,48 +227,58 @@ include_once(G5_THEME_PATH.'/head.php');
 
     <section id="Esec" class="py-3">
         <h3>판매처찾기</h3>
-        <!-- <ul class="d-md-flex justify-content-center mb-0">
+        <ul class="d-md-flex justify-content-md-center my-md-5">
             <li class="mr-md-5 pr-1">
                 <input type="text" placeholder='검색으로 찾기'>
-                <i class=""></i>
+                <i class="fad fa-search-location"></i>
             </li>
             <li class="mr-md-5 pr-1">
                 <input type="text" placeholder='매장, 도로명, 동명을 검색해주세요.'>
-                <i class=""></i>
+                <i class="fad fa-search-location"></i>
             </li>
         </ul>
-        <div class="map d-lg-flex justify-content-lg-center">
-            <div class="mapimg">
-                <img src="/ncs/img/britaproject_img/map.jpg" alt="지도">
-            </div>
+        <div class="map row justify-content-center">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1660707882513" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1660707882513",
+                    "key" : "2bebm",
+                }).render();
+            </script>
+
             <div class="area">
-                <ul class="">
-                    <li class=""><a href="">가로수길점</a></li>
-                    <li class=""><a href="">가로수길점</a></li>
-                    <li class=""><a href="">강남점</a></li>
-                    <li class=""><a href="">송파점</a></li>
+                <ul class="my-md-5">
+                    <li class="area_text px-3">
+                        <a href="">용산점</a>
+                        <strong>new open!</strong>
+                        <span>서울 용산구 한강대로30길 25</span>
+                    </li>
+                    <li class="area_text px-3">
+                        <a href="">가로수길점</a>
+                        <strong>new open!</strong>
+                        <span>서울 강남구 도산대로 128</span>
+                    </li>
+                    <li class="area_text px-3">
+                        <a href="">강남점</a>
+                        <span>서울 강남구 영동대로 513</span>
+                    </li>
+                    <li class="area_text px-3">
+                        <a href="">송파점</a>
+                        <span>서울 송파구 올림픽로 300</span>
+                    </li>
                 </ul>
             </div>
-        </div> -->
-
-    <!-- * 카카오맵 - 지도퍼가기 -->
-        <!-- 1. 지도 노드 -->
-        <div id="daumRoughmapContainer1660291691228" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-        <!--
-            2. 설치 스크립트
-            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-        -->
-        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-         <!-- 3. 실행 스크립트 -->
-        <script charset="UTF-8">
-            new daum.roughmap.Lander({
-                "timestamp" : "1660291691228",
-                "key" : "2bd38",
-                "mapWidth" : "640",
-                "mapHeight" : "360"
-            }).render();
-        </script>
+        </div>
 
 
 

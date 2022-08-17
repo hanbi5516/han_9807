@@ -2,3 +2,6 @@
 *.png
 img/
 .vscode/
+*.ai
+*.psds
+*.php

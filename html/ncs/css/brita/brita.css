@@ -27,10 +27,10 @@
 
 a,h2{font-family: 'GmarketSansMedium';}
 h3{font-family: 'GmarketSansBold';text-align: center;}
-h4,h5,h6{font-family: 'GmarketSansLight'; font-weight: 700; text-align: center;}
+h4,h5,h6,strong,span,input{font-family: 'GmarketSansLight'; font-weight: 700;}
 p{font-size: 0.8em; font-family: 'GmarketSansLight';font-weight: 700;}
 label{font-family: 'GmarketSansMedium'; margin-bottom: 0;}
-strong{font-family: 'GmarketSansLight';}
+
 
 .review > ul{display: flex; align-items: flex-end;}
 .review > ul > li{margin-right: 30px;}
@@ -66,18 +66,7 @@ strong{font-family: 'GmarketSansLight';}
     background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/lastbanner_test.jpg);
 }
 
-#Bsec .swiper-wrapper .ev1{
-    background-size: 100% auto;
-    background-position: center; 
-    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/firstevent_test.jpg);
-}
-#Bsec .swiper-wrapper .ev2{
-    background-size: 100% auto;
-    background-position: center; 
-    background-image: url(http://bakhanbi98.dothome.co.kr/ncs/img/britaproject_img/secondevent_test.png);
-}
 
-#Bsec .swiper-slide{ height:0; padding-top: 42.8%; min-height:800px; background-repeat: no-repeat;}
 
 #Csec, #Dsec, #Esec{ height:100vh; min-height:600px; margin:0 3em; }
 
@@ -152,6 +141,17 @@ border-bottom:1px solid White
 
 /* Bsec */
 .event h3{margin: 1.5em 0;}
+.event{margin-bottom: 10em;}
+
+.swiper-slide{width: 100%; height: 820px;}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 820px;
+    object-fit: cover;
+}
+/* #Bsec .swiper-slide{ height:0; padding-top: 42.8%; min-height:800px; background-repeat: no-repeat;} */
+
 
 
 /* Csec */
@@ -180,24 +180,31 @@ border-bottom:1px solid White
 #notice > div > h3{margin: 1.5em 0;}
 
 .noticetext{
-    width: 75em;
+    max-width: 75em;
     height: 10em;
     background-color: #90E0DB;
     margin: 0 auto;
 }
-#notice form ul{margin: auto 0;}
+/* #notice form ul{margin: 5em auto;} */
 
 #noticetext input[type='checkbox'] label{font-family: 'GmarketSansLight'; font-weight: 700;}
 #noticetext label{color: #555;font-size: 0.7em;}
 
 .noticename{
     max-width: 50em;
-    min-width: 20em;
-    border-top: solid 3px #DFF7F5;
+    min-width: 35em;
+    border-top: solid 4px #dff7f5;
+    /* border-radius: 3px; */
     display: flex;
-    align-items: stretch;
-    text-align: center;
+    /* text-align: center; */
+    justify-content: space-around;
+    /* line-height: 2.5em; */
+    align-items: center;
 }
+.noticename:nth-last-child(1){
+    border-bottom: solid 4px #dff7f5;
+}
+/* .noticename .check{ margin-left: 5em;} */
 
 .noticename div label{
     font-size: 0.8em;
@@ -206,14 +213,13 @@ border-bottom:1px solid White
 }
 .noticename strong{
     color: #000;
-    margin-right: 6em;
-}
-.noticename:nth-last-child(1) strong{
-    margin-right: 5em;
+    /* margin-right: 6em; */
+    /* margin: 0 auto; */
+    line-height: 3.5em;
 }
 
 
-.send{ border:1px solid #06456b; border-radius: 10px; padding: 0.5rem; background-color: #fff0;}
+.send{ border:1px solid #06456b; border-radius: 10px; padding: 0.5rem; background-color: #90e0db;}
 .send[type='submit']:hover{background-color: #cff0ff;}
 
 
@@ -229,6 +235,27 @@ border-bottom:1px solid White
 
 .area{margin-left: 2em;}    
 
+.root_daum_roughmap .wrap_controllers{
+    display: none;
+}
+.area_text{
+    border-top: 4px solid #dff7f5;
+    line-height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28em;
+}
+.area_text:nth-last-child(1){
+    border-bottom: solid 4px #dff7f5;
+}
+.area_text a{
+    display: block;
+    color: #000;
+}
+.area_text strong{
+    color: #08E1D4;
+}
 
 
 @media (max-width:1280px){
