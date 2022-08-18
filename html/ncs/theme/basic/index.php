@@ -54,7 +54,7 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
 
 
-    <section id="Asec" class="container py-3">
+    <section id="Asec" class="container py-5">
         <h3>브리타 효과</h3> 
         
         <div class="effect d-lg-flex justify-content-lg-between align-items-lg-center">
@@ -77,7 +77,7 @@ include_once(G5_THEME_PATH.'/head.php');
         
         
     </section>
-    <section id="Bsec" class="mx-0 py-3">
+    <section id="Bsec" class="mx-0 py-4">
         <div class="event">
             <h3>이벤트</h3>
             <div class="swiper event-mySwiper">
@@ -92,7 +92,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Csec">
+    <section id="Csec" class="py-4">
         <h3>고객찐리뷰</h3>
         <div class="rt row justify-content-center pt-5">
             <div class="re col-lg col-md-8 mx-md-auto text-center text-lg-left mb-5 mb-lg-0">
@@ -113,8 +113,10 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
             <div class="re col-lg col-md-6">
                 <a href="#none"><img src="/ncs/img/britaproject_img/review2.jpg" alt=""></a>
-                <div class="re_img d-flex justify-content-end">
+                <div class="re_img d-flex justify-content-between align-items-center">
+                    <p class="mb-0">best review</p>
                     <div>
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
                         <img src="/ncs/img/britaproject_img/star.svg" alt="">
                         <img src="/ncs/img/britaproject_img/star.svg" alt="">
                         <img src="/ncs/img/britaproject_img/star.svg" alt="">
@@ -126,7 +128,8 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
             <div class="re col-lg col-md-6">
                 <a href=""><img src="/ncs/img/britaproject_img/review3.jpg" alt=""></a>
-                <div class="re_img d-flex justify-content-end">
+                <div class="re_img d-flex justify-content-between align-items-center">
+                    <p class="mb-0">real review</p>
                     <div>
                         <img src="/ncs/img/britaproject_img/star.svg" alt="">
                         <img src="/ncs/img/britaproject_img/star.svg" alt="">
@@ -139,22 +142,29 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
             <div class="re col-lg col-md-6">
                 <a href=""><img src="/ncs/img/britaproject_img/review4.jpg" alt=""></a>
-                <div class="re_img d-flex justify-content-end">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                
+                <div class="re_img d-flex justify-content-between align-items-center">
+                    <p class="mb-0">real review</p>
+                    <div>
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                    </div>
                 </div>
                 <p class="mb-0 pt-3">사무실에 놓을겸 대용량으로 구매해서 사용중입니다 직원들도 만족하고 있고 생각보다 필터를 자주갈지 않아도 되고 유튜브에 나와있는대로 따라하는데
                 </p>
             </div>
             <div class="re col-lg col-md-6">
                 <a href=""><img src="/ncs/img/britaproject_img/review5.jpg" alt=""></a>
-                <div class="re_img d-flex justify-content-end">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
-                    <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                <div class="re_img d-flex justify-content-between align-items-center">
+                <p class="mb-0">real review</p>
+                    <div>
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                        <img src="/ncs/img/britaproject_img/star.svg" alt="">
+                    </div>
                 </div>
                 <p class="mb-0 pt-3">별명이 하마인 저는 브리타 플로우를 구매해 보았어요! 부엌 자리도 크게 차지 안하고 원하는 만큼 시원하게 마실 수 있다는게 큰 장점이에요
                 </p>
@@ -162,7 +172,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </section>
 
-    <section id="Dsec" class="my-3">
+    <section id="Dsec" class="py-4">
         <div id="box">
             <div id="notice">
                 <div class="noticetext d-flex flex-column justify-content-evenly align-items-center my-3">
@@ -220,23 +230,23 @@ include_once(G5_THEME_PATH.'/head.php');
                             습니다. 동의가 철회될 때까지 데이터가 보관됩니다. 본인은 동의를 거부할 권리가 있으며 거부 시 상기 이메일 전송은 거부되거나 제한됩니다.</label>
                     </li>
                 </ul>
-                <input class="send" type='submit' value='보내기'>
+                <input class="send d-flex align-items-center" type='submit' value='보내기'>
             </div>
         </div>
     </section>
 
-    <section id="Esec" class="py-3">
+    <section id="Esec" class="py-4">
         <h3>판매처찾기</h3>
-        <ul class="d-md-flex justify-content-md-center my-md-5">
-            <li class="mr-md-5 pr-1">
-                <input type="text" placeholder='검색으로 찾기'>
-                <i class="fad fa-search-location"></i>
-            </li>
-            <li class="mr-md-5 pr-1">
-                <input type="text" placeholder='매장, 도로명, 동명을 검색해주세요.'>
-                <i class="fad fa-search-location"></i>
-            </li>
-        </ul>
+        <div class="box d-md-flex justify-content-md-center my-md-5">
+            <div class="inbox mr-md-5 px-md-2">
+                <input class="buy_t_1" type="text" placeholder='검색으로 찾기'>
+                <i class="fas fa-caret-down text-white"></i>
+            </div>
+            <div class="inbox ml-md-5 px-md-2">
+                <input class="buy_t_2" type="text" placeholder='매장, 도로명, 동명을 검색해주세요.'>
+                <i class="far fa-search text-white"></i>
+            </div>
+        </div>
         <div class="map row justify-content-center">
             <!-- * 카카오맵 - 지도퍼가기 -->
             <!-- 1. 지도 노드 -->
@@ -279,7 +289,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </ul>
             </div>
         </div>
-
+    </section>
 
 
 

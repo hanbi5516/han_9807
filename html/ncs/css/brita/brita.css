@@ -25,6 +25,7 @@
 
 /* 공통부분 */
 
+body{font-family: 'GmarketSansMedium','Noto Sans KR', sans-serif;}
 a,h2{font-family: 'GmarketSansMedium';}
 h3{font-family: 'GmarketSansBold';text-align: center;}
 h4,h5,h6,strong,span,input{font-family: 'GmarketSansLight'; font-weight: 700;}
@@ -196,7 +197,7 @@ border-bottom:1px solid White
     border-top: solid 4px #dff7f5;
     /* border-radius: 3px; */
     display: flex;
-    /* text-align: center; */
+    text-align: center;
     justify-content: space-around;
     /* line-height: 2.5em; */
     align-items: center;
@@ -208,7 +209,7 @@ border-bottom:1px solid White
 
 .noticename div label{
     font-size: 0.8em;
-    color: #555;
+    color: #555; 
     text-align: center;
 }
 .noticename strong{
@@ -217,9 +218,35 @@ border-bottom:1px solid White
     /* margin: 0 auto; */
     line-height: 3.5em;
 }
+.check{
+    position: relative;
+    display: inline-block;
+}
+.check::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.153em;
+    background-color: #25c3b9;
+    transition: 0.6s;
+    width: 0;
+}
 
+.check::after{
+    bottom: 0;
+    left: 0;
+    
+}
+.check:hover::after{
+    width: 100%;
+}
+.check input{
+    background-color: transparent;
+    border: 0;
+    color: #90E0DB; 
+}
 
-.send{ border:1px solid #06456b; border-radius: 10px; padding: 0.5rem; background-color: #90e0db;}
+.send{ border:none; border-radius: 2em; padding: 0.5rem; background-color: #90e0db;}
 .send[type='submit']:hover{background-color: #cff0ff;}
 
 
@@ -229,6 +256,59 @@ border-bottom:1px solid White
 
 /* Esec */
 #Esec h3{margin: 1.5em 0;}
+.box{
+    max-width: 60em;
+    min-width: 35em;
+    height: 4em;
+    background-color: #90E0DB;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+/* .box input{
+    background-color: transparent;
+    border: 0;
+    color: #06456b; 
+} */
+
+
+.buy_t_1{
+    width: 7em;
+}
+.buy_t_2{
+    width: 15.5em;
+}
+.buy_t_1, .buy_t_2{
+    background-color: transparent;
+    border: 0;
+    color: #06456b;
+}
+/* ================================================ */
+.inbox{
+    position: relative;
+    display: inline-block;
+   }
+ 
+   .inbox::after{
+                 content: "";
+                 display: block;
+                 position: absolute;
+                 height: 0.153em;
+                 background-color: #25c3b9;
+                 transition: 0.6s;
+                 width: 0;
+             }
+ 
+             .inbox::after{
+                 bottom: 0;
+                 left: 0;
+                 
+             }
+             .inbox:hover::after{
+                 width: 100%;
+             }
+ /* ================================================================== */
 
 .mapimg{margin-right: 2em; width: 100%;}
 .mapimg img{max-width: 5rem; height: 5rem;}

@@ -86,7 +86,7 @@ li{ list-style: none;}
 }
 
 /* bg2 */
-#me h2{
+.bg_t{
     background: rgb(255, 192, 203);
     color: #666;
     align-items: center;
@@ -95,6 +95,9 @@ li{ list-style: none;}
     border-radius: 15px;
     font-size: 1.5em;
 
+}
+.bg_t strong{
+    color: #a751fd;
 }
 #me div div div img{
     height: 17rem;
